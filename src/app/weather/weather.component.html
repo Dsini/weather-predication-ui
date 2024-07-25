@@ -1,0 +1,28 @@
+<div class="container">
+        <h2>Weather Forecast</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="cityName">Enter City Name:</label>
+                <input type="text" class="form-control" id="cityName" [(ngModel)]="cityName" name="cityName" required>
+            </div>
+            <div class="button-wrapper">
+                <button type="submit" class="btn btn-primary">Get Weather</button>
+            </div>
+        </form>
+        <table class="table" *ngIf="weatherData.length > 0">
+            <thead *ngIf="weatherData.length > 0">
+                <tr>
+                    <th>Date Time</th>
+                    <th>Temperature (C)</th>
+                    <th>Warnings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let weather of weatherData">
+                    <td>{{ weather.dt_txt }}</td>
+                    <td>{{ weather.main.temp }}</td>
+                    <td>{{ weather.warnings }}</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>

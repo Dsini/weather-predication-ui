@@ -1,0 +1,105 @@
+
+
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  color: black;
+}
+
+.form-group label {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.form-control {
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.button-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+}
+
+.table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  color: black;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  color: black;
+}
+
+.table th {
+  background-color: hsl(120, 25%, 97%);
+  color: black;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.942);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.942);
+}
+
+@media (max-width: 768px) {
+  .container {
+      margin-top: 20px;
+      padding: 10px;
+  }
+
+  .form-group label, .btn-primary {
+      font-size: 1rem;
+  }
+
+  .table th, .table td {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+}
